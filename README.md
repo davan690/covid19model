@@ -1,14 +1,38 @@
-![](https://github.com/ImperialCollegeLondon/covid19model/workflows/CI/badge.svg)
-
 # covid19model [![DOI](https://zenodo.org/badge/250386901.svg)](https://zenodo.org/badge/latestdoi/250386901)
 
 Code for modelling estimated deaths and infections for COVID-19 from ["Estimating the effects of non-pharmaceutical interventions on COVID-19 in Europe"](https://www.nature.com/articles/s41586-020-2405-7), Flaxman, Mishra, Gandy et al, Nature, 2020, the published version of our original [Report 13](https://www.imperial.ac.uk/mrc-global-infectious-disease-analysis/covid-19/report-13-europe-npi-impact/).
 
 If you are looking for the individual based model used in Imperial's [Report 9, Ferguson, Laydon, Nedjati-Gilani et al](https://www.imperial.ac.uk/mrc-global-infectious-disease-analysis/covid-19/report-9-impact-of-npis-on-covid-19/), please look [here](https://github.com/mrc-ide/covid-sim).
 
+## Version 12 Release [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4646350.svg)](https://doi.org/10.5281/zenodo.4646350)
+
+This is the release related to our [Tiers paper](https://www.medrxiv.org/content/10.1101/2021.02.23.21252277v1), where we use latent factor model to estimate the effectiveness of tiers systems in England. **Peer reviewed version to be out soon.** All other code is still the same for previous releases.
+
+To reproduce results of the paper either from Rstudio ``source("tiers/spline_LFA.R")`` or from the command line ``Rscript tiers/spline_LFA.R``.
+
+The instructions for reproducing European report , Italy report , Brazil report , USA report , Nature, IFR, USA age specific report, Nature Communincations, and Science paper  are the same as earlier (Look at version 3, version 4, version 5, version 6, version 7, version 8, version 9, version 10 and version 11). This release is specific to [Tiers paper](https://www.medrxiv.org/content/10.1101/2021.02.23.21252277v1).
+
+This release has been checked on macOS Catalina version 10.15.6/7 and Ubuntu version 18.04.2.
+
+**The authors of version 12 Release are Daniel J Laydon, Swapnil Mishra, and Samir Bhatt**
+
+## Version 11 Release [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4461896.svg)](https://doi.org/10.5281/zenodo.4461896)
+
+This is the release related to our [Science paper](https://science.sciencemag.org/content/early/2021/02/01/science.abe8372), where we use age-specific mobility data to estimate the epidemic in the USA by accounting for age-specific heterogeneity. All other code is still the same for previous releases.
+
+To run this code you need to follow the steps listed in the age-specific model [here](https://github.com/ImperialCollegeLondon/covid19model/tree/master/covid19AgeModel).
+
+The code should be run in full mode to obtain credible results. Not running a full run to estimate anything is not recommended and discouraged. Only a full run should be used to get results.
+
+The instructions for reproducing European report , Italy report , Brazil report , USA report , Nature, IFR, USA age specific report and Nature Communincations    are the same as earlier (Look at version 3, version 4, version 5, version 6, version 7, version 8, version 9 and version 10). This release is specific to [ Science paper](https://science.sciencemag.org/content/early/2021/02/01/science.abe8372).
+
+This release has been checked on macOS Catalina version 10.15.6/7 and Ubuntu version 18.04.2.
+
+**The authors of version 11 Release are Melodie Monod, Alexandra Blenkinsop, Xiaoyue Xi, H Juliette Unwin, Swapnil Mishra, Oliver Ratmann"**
+
 ## Version 10 Release [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4073091.svg)](https://doi.org/10.5281/zenodo.4073091)
 
-This is the release related to our usa-paper (soon to be out) and [medRxiv paper](https://www.medrxiv.org/content/10.1101/2020.07.13.20152355v2?rss=1%22), where we use mobility data to estimate situation in all states of the USA. All other code is still the same.
+This is the release related to Unwin, H.J.T., Mishra, S., Bradley, V.C. et al. State-level tracking of COVID-19 in the United States. Nat Commun 11, 6189 (2020). https://doi.org/10.1038/s41467-020-19652-6, where we use mobility data to estimate situation in all states of the USA. All other code is still the same.
 
 To run this code you can directly run the base-usa.r file or from command line after seting the current directory as the repository directory run the following command `Rscript base-usa-cases.r`
 

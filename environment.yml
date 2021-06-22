@@ -1,5 +1,6 @@
 name: covid19model
 dependencies:
+  - r-base
   - r-bayesplot
   - r-data.table
   - r-envstats
@@ -23,5 +24,6 @@ dependencies:
   - r-ggstance
   - r-gridextra
   - r-dfoptim
+  - r-BH
 channels:
   - conda-forge
